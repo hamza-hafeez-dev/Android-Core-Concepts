@@ -1,11 +1,13 @@
 import java.util.Scanner;
 public class QuestionNo23 {
+    
     private int temperature;
     public static final int TEMPERATURE1 = 0;
     public static final int TEMPERATURE2 = 10;
     public static final int TEMPERATURE3 = 20;
     public static final int TEMPERATURE4 = 30;
     public static final int TEMPERATURE5 = 40;
+    
     public QuestionNo23() {
     }
     public QuestionNo23(int temperature) {
@@ -17,10 +19,14 @@ public class QuestionNo23 {
     public void setTemperature(int temperature) {
         this.temperature = temperature;
     }
+
+    
     public void getTemp(){
         System.out.print("Enter The Temperature Of Your Area : ");
         setTemperature(new Scanner(System.in).nextInt());
     }
+
+    
     public void checkTemp(){
         if (getTemperature() <= TEMPERATURE1){
             System.out.println(getTemperature()+" Degree"+" Too Freezing In Your Area. ");
